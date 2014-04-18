@@ -9,7 +9,6 @@ namespace CodePreviewLab.Models
 {
     public class ReadCodeModel
     {
-
         public ReadCodeModel(string filePath, string descript = null)
         {
             this.FilePath = filePath;
@@ -23,8 +22,5 @@ namespace CodePreviewLab.Models
         public string Descript { get; set; }
 
         public string Content { get; set; }
-
-
-
     }
 }
