@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<br />
+<br />
+<h2>Index</h2>
+
+@*Code-Example*@
+@{
+    CodePreviewLab.Models.ReadCodeCollection models = new CodePreviewLab.Models.ReadCodeCollection();
+    models.Add(@"Controllers\HomeController.cs", "Controller")
+        .Add(@"Models\ReadCodeModel.cs", "Model")
+           .Add(@"Views\Home\Index.cshtml", "View")
+        .Add(@"Views\Shared\_LoginPartial.cshtml", "PartialView");
+}
+@Html.Partial("_ReadCode", models)
+
+
